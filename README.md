@@ -4,7 +4,7 @@ Threaders is a web app that shows the most followed threaders on the Thread text
 
 # How to use Threaders
 
-To use Threaders, simply visit the website and enter your Thread username and password. Once you are logged in, you will be able to see a list of the most followed threads on Thread. You can filter the list by topic or category, or search for specific threads.
+To use Threaders, simply visit the website and  you will be able to see a list of the most followed threads on Thread. You can filter the list by topic or category, or search for specific threads.
 
 To save a thread as an image, click on the "Save as image" button next to the thread title. To share a thread on your Thread profile, click on the "Share" button next to the thread title.
 
