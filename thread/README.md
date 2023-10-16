@@ -1,5 +1,5 @@
 What is Threaders?
-Threaders is a web app that shows the most followed threaders on the Thread text-based social media platform, ranked by the number of followers each thread has. The app also allows users to save threads as images or share them on their Thread profile.
+Threaders is a web app that shows the most followed threaders on the Thread text-based social media platform, ranked by the number of followers each threader has. The app also allows users to save threads as images or share them on their Thread profile.
 
 How to use Threaders
 To use Threaders, simply visit the website and you will be able to see a list of the most followed threads on Thread. You can filter the list by topic or category, or search for specific threads.
