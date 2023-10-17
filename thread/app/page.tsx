@@ -1,8 +1,10 @@
 import Image from "next/image";
 import React from "react";
 import { ModeToggle } from "@/components/modeToggle";
-
+import url from "../public/test.jpg"
 const page = () => {
+
+  
   return (
     <section className=" p-5">
       <div className="navbar bg-base-100">
@@ -61,7 +63,14 @@ const page = () => {
           <div className=" px-8 py-4">
             <ul>
               <li>
-                <Image src={""} alt={""}/>
+                {/* <Image src={""} alt={""}/>  I want to desplay image of the influencer */}
+                <Image src={url} alt={""}  width={25} height={25} className="rounded-full"/>
+                {/* Name of the inluencer */}
+                <p>Name of influencer</p>
+                {/* How many follower he/she has */}
+                <span><small>12K </small>Followers</span>
+                {/* follow button  */}
+                <button className="btn btn-primary">Follow</button>
                  
               </li>
             </ul>
