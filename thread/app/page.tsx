@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const page = () => {
@@ -40,15 +41,27 @@ const page = () => {
           <div className=" p-4">
             <h1 className=" text-4xl font-bold">Search</h1>
             {/* <p>Curious about </p> */}
+            {/* the search input to search for their name  */}
             <input
               type="text"
-              placeholder="Type here"
+              placeholder="input your name here"
+              name="search"
+              id="search"
+              autoComplete="off"
+              spellCheck="true"
+              autoCorrect="off"
+              autoCapitalize="off"
+              maxLength={50}
               className="input input-bordered w-full max-w mt-6"
             />
           </div>
+          {/* Where the list of the top followed thread will show with their image and name with follow button  */}
           <div className=" px-8 py-4">
             <ul>
-              <li>hello</li>
+              <li>
+                <Image src={""} alt={""}/>
+                 
+              </li>
             </ul>
           </div>
         </div>
