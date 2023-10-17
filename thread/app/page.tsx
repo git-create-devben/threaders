@@ -41,7 +41,7 @@ const page = () => {
       <main className=" flex justify-center p-5  h-screen w-max-100 ">
         <div className=" bg-base-200 w-[50rem] rounded-2xl">
           <div className=" p-4">
-            <h1 className=" text-4xl font-bold">Search</h1>
+            <h1 className=" text-4xl font-bold text-white">Search</h1>
             {/* <p>Curious about </p> */}
             {/* the search input to search for their name  */}
             <input
