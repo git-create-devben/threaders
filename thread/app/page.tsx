@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import { ModeToggle } from "@/components/modeToggle";
 
 const page = () => {
   return (
@@ -19,6 +20,7 @@ const page = () => {
           </a>
         </div>
         <div className="flex-none">
+           <ModeToggle/>
           <button className="btn btn-square btn-ghost">
             <svg
               xmlns="http://www.w3.org/2000/svg"
