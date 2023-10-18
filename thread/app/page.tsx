@@ -1,10 +1,32 @@
 import Image from "next/image";
 import React from "react";
 import { ModeToggle } from "@/components/modeToggle";
-import url from "../public/test.jpg"
-const page = () => {
+import pic from "../public/test.jpg";
+const page = async () => {
+
+  const url = 'https://meta-threads.p.rapidapi.com/v1/user/threads/?user_id=314216';
+  const options = {
+    method: 'GET',
+    headers: {
+      'X-RapidAPI-Key': '7dd1c7dee4mshcfec6817a02ae0cp191b12jsn491b5cf51ed9',
+      'X-RapidAPI-Host': 'meta-threads.p.rapidapi.com'
+    }
+  };
+
+  try {
+    const response = await fetch(url, options);
+    const result = await response.text();
+    const data = JSON.parse(result);
+
+    // Do something with the data
+    console.log(data);
+  } catch (error) {
+    console.error(error);
 
   
+  }
+  
+
   return (
     <section className=" p-5">
       <div className="navbar bg-base-100">
@@ -22,7 +44,7 @@ const page = () => {
           </a>
         </div>
         <div className="flex-none">
-           <ModeToggle/>
+          <ModeToggle />
           <button className="btn btn-square btn-ghost">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -62,16 +84,31 @@ const page = () => {
           {/* Where the list of the top followed thread will show with their image and name with follow button  */}
           <div className=" px-8 py-4">
             <ul>
-              <li>
+              <li className="flex gap-4 items-center">
                 {/* <Image src={""} alt={""}/>  I want to desplay image of the influencer */}
-                <Image src={url} alt={""}  width={25} height={25} className="rounded-full"/>
-                {/* Name of the inluencer */}
-                <p>Name of influencer</p>
-                {/* How many follower he/she has */}
-                <span><small>12K </small>Followers</span>
+
+                <div className="avatar">
+                  <div className="w-14 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                    <Image
+                      src={pic}
+                      alt={""}
+                      width={100}
+                      height={100}
+                      className="rounded-full"
+                    />
+                  </div>
+                </div>
+                <div className=" flex-1">
+                  {/* Name of the inluencer */}
+                  <p className=" text-1xl font-bold">influencer</p>
+                  {/* How many follower he/she has */}
+                  <span className=" text-md font-serif">
+                    <small className=" text-2xl">12K </small >Followers
+                  </span>
+                </div>
+
                 {/* follow button  */}
-                <button className="btn btn-primary">Follow</button>
-                 
+                <button className="btn bg-[#000] text-white ">Follow</button>
               </li>
             </ul>
           </div>
