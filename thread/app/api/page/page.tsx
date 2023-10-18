@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 
 const Page: React.FC = () => {
   const [username, setUsername] = useState("");
-  const [data, setData] = useState<null | string>(null);
+  const [data, setData] = useState<null | string>();
 
   useEffect(() => {
     const fetchData = async () => {
