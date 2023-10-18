@@ -2,30 +2,9 @@ import Image from "next/image";
 import React from "react";
 import { ModeToggle } from "@/components/modeToggle";
 import pic from "../public/test.jpg";
-const page = async () => {
 
-  const url = 'https://meta-threads.p.rapidapi.com/v1/user/threads/?user_id=314216';
-  const options = {
-    method: 'GET',
-    headers: {
-      'X-RapidAPI-Key': '7dd1c7dee4mshcfec6817a02ae0cp191b12jsn491b5cf51ed9',
-      'X-RapidAPI-Host': 'meta-threads.p.rapidapi.com'
-    }
-  };
 
-  try {
-    const response = await fetch(url, options);
-    const result = await response.text();
-    const data = JSON.parse(result);
-
-    // Do something with the data
-    console.log(data);
-  } catch (error) {
-    console.error(error);
-
-  
-  }
-  
+const page = () => { 
 
   return (
     <section className=" p-5">
