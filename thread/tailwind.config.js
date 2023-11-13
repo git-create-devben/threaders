@@ -8,6 +8,7 @@ module.exports = {
     './src/**/*.{ts,tsx}',
     "./node_modules/keep-react/**/*.{js,jsx,ts,tsx}",
 	],
+  presets: [require("keep-react/src/keep-preset.js")],
   theme: {
     container: {
       center: true,
