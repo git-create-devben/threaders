@@ -2,13 +2,14 @@ import Image from "next/image";
 import React from "react";
 import { ModeToggle } from "@/components/modeToggle";
 import pic from "../public/test.jpg";
+import Navbar from "../components/Navbar"
 
 
 const page = () => { 
 
   return (
     <section className=" p-5">
-      <div className="navbar bg-base-100">
+      {/* <div className="navbar bg-base-100">
         <div className="flex-1 ">
           <a className="btn btn-ghost text-xl">
             <span className=" text-blue-500">T</span>
@@ -40,7 +41,8 @@ const page = () => {
             </svg>
           </button>
         </div>
-      </div>
+      </div> */}
+      <Navbar />
       <main className=" flex justify-center p-5  h-screen w-max-100 ">
         <div className=" bg-base-200 w-[50rem] rounded-2xl">
           <div className=" p-4">
