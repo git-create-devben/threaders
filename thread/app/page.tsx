@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { ModeToggle } from "@/components/modeToggle";
-import pic from "../public/test.png";
+import pic from "../public/";
 import Navbar from "../components/Navbar"
 
 
