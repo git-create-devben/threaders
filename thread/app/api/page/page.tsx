@@ -54,7 +54,7 @@ const Page: React.FC = () => {
       ) : data === "" ? (
         <div className=" text-white text-2xl">No data found.</div>
       ) : (
-        <div className=" text-center m-auto text-4xl text-white" >{data}</div>
+        <div className=" text-center m-auto text-4xl text-white" >{data} this is it</div>
       )}
     </div>
   );
