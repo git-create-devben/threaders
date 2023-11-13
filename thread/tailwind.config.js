@@ -6,9 +6,7 @@ module.exports = {
     './components/**/*.{ts,tsx}',
     './app/**/*.{ts,tsx}',
     './src/**/*.{ts,tsx}',
-    "./node_modules/keep-react/**/*.{js,jsx,ts,tsx}",
 	],
-  presets: [require("keep-react/src/keep-preset.js")],
   theme: {
     container: {
       center: true,
@@ -75,5 +73,5 @@ module.exports = {
     },
   },
   plugins: [require("tailwindcss-animate")],
-  plugins: [require("daisyui")],
+  plugins: [require("@tailwindcss/typography"), require("daisyui")],
 }
